@@ -7,8 +7,13 @@ Email: denivalesq@gmail.com (dvale@iv.hr), npaar@phy.hr
 
 Platform: Linux
 
-This work is published under the Creative Commons Zero v1.0 Universal.
+Version: v1.0
 
+Build: 2019 - 2023  All rights reserved (C)
+
+This work is protected under the Croatian law "Zakon o autorskom pravu i srodnim pravima" NN 111/21 from October 22 2021.
+
+This work is published under the Creative Commons Zero v1.0 Universal.
 
 The statements above do not include any external program or latex package called by this program.
 
