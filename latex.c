@@ -400,7 +400,7 @@ fprintf (lat->LF, "\\setlength{\\footskip}{10mm}\n");
 //fprintf (lat->LF, "\\usepackage{cite}\n");
 //fprintf (lat->LF, "\\usepackage[title]{appendix}\n");
 
-//fprintf (lat->LF, "\\usepackage{sectsty}\n");
+fprintf (lat->LF, "\\usepackage{sectsty}\n");
 fprintf (lat->LF, "\\subsectionfont{\\itshape}\n");
 
 fprintf (lat->LF, "\\linespread{1.2}\n");

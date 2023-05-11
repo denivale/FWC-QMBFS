@@ -24,22 +24,23 @@ SRC_TEST4	= operator.c test_operator.c
 all:	$(EXEC)
 
 run:	$(DEPS) $(SRC)
-  $(CC) -o $@ $(SRC) $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $(SRC) $(CFLAGS) $(LDFLAGS)
 
 test_index:	$(DEPS_TEST1) $(SRC_TEST1)
-  $(CC) -o $@ $(SRC_TEST1) $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $(SRC_TEST1) $(CFLAGS) $(LDFLAGS)
 
 test_comb:	$(DEPS_TEST2) $(SRC_TEST2)
-  $(CC) -o $@ $(SRC_TEST2) $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $(SRC_TEST2) $(CFLAGS) $(LDFLAGS)
 
 test_point:	$(DEPS_TEST3) $(SRC_TEST3)
-  $(CC) -o $@ $(SRC_TEST3) $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $(SRC_TEST3) $(CFLAGS) $(LDFLAGS)
 
 test_operator:	$(DEPS_TEST4) $(SRC_TEST4)
-  $(CC) -o $@ $(SRC_TEST4) $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $@ $(SRC_TEST4) $(CFLAGS) $(LDFLAGS)
 
 clean:
 	rm -rf *~
 
 mrproper: clean
 	rm -rf $(EXEC)
+
