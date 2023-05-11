@@ -9,6 +9,8 @@ Platform: Linux
 
 Version: v1.0
 
+Maintainer of the current version: Deni Vale
+
 Build: 2019 - 2023  All rights reserved (C)
 
 This work is protected under the Croatian law "Zakon o autorskom pravu i srodnim pravima" NN 111/21 from October 22 2021.
