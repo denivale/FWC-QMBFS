@@ -1,6 +1,6 @@
 # FWC-QMBFS
 Fast calculation full Wick's contractions in quantum many-body
-
+(dodaj izmjenjeni makefile)
 Authors: Deni Vale, Nils Paar
 
 Email: denivalesq@gmail.com (dvale@iv.hr), npaar@phy.hr
