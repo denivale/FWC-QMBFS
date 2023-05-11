@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\fi
+\usepackage{simpler-wick}
+\usepackage[croatian]{babel}
+\usepackage{charter}
+\usepackage[OT1]{fontenc}
+%http://www.tug.dk/FontCatalogue/mathfonts.html
+\usepackage[]{amssymb}
+\usepackage[]{mathrsfs}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage[most]{tcolorbox}
+\usepackage{inconsolata}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+%margine
+\setlength{\hoffset}{4.6mm}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparsep}{0pt}
+%text
+\setlength{\textheight}{252mm}
+\setlength{\textwidth}{155mm}
+%header
+\setlength{\voffset}{-0.4mm}
+\setlength{\headheight}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\headsep}{0pt}
+%footer
+\setlength{\footskip}{10mm}
+\usepackage{sectsty}
+\subsectionfont{\itshape}
+\linespread{1.2}
+\allowdisplaybreaks
+\begin{document}
+\begin{align}
+\langle HF | a^\dagger_{a}a^\dagger_{b}a^\dagger_{c}a_{d}a_{f}a_{e}| HF \rangle~&=~\langle HF | h_{a}h_{b}h_{c}h^\dagger_{d}h^\dagger_{f}h^\dagger_{e}| HF \rangle\\ 
+~&=~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c1 h^\dagger_{d}\c2 h^\dagger_{f}\c3 h^\dagger_{e}}| HF \rangle~+~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c1 h^\dagger_{d}\c3 h^\dagger_{f}\c2 h^\dagger_{e}}| HF \rangle\nonumber\\ 
+~&+~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c2 h^\dagger_{d}\c1 h^\dagger_{f}\c3 h^\dagger_{e}}| HF \rangle~+~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c3 h^\dagger_{d}\c1 h^\dagger_{f}\c2 h^\dagger_{e}}| HF \rangle\nonumber\\ 
+~&+~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c3 h^\dagger_{d}\c2 h^\dagger_{f}\c1 h^\dagger_{e}}| HF \rangle~+~\langle HF |\wick[offset=1.2em]{\c1 h_{a}\c2 h_{b}\c3 h_{c}\c2 h^\dagger_{d}\c3 h^\dagger_{f}\c1 h^\dagger_{e}}| HF \rangle\\ 
+~&=~(-1)\delta_{a d}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b f}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c e}\Theta_{\epsilon_F \epsilon_{c}}~+~\delta_{a d}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b e}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c f}\Theta_{\epsilon_F \epsilon_{c}}\nonumber\\ 
+~&+~\delta_{a f}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b d}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c e}\Theta_{\epsilon_F \epsilon_{c}}~+~(-1)\delta_{a f}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b e}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c d}\Theta_{\epsilon_F \epsilon_{c}}\nonumber\\ 
+~&+~\delta_{a e}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b f}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c d}\Theta_{\epsilon_F \epsilon_{c}}~+~(-1)\delta_{a e}\Theta_{\epsilon_F \epsilon_{a}}\delta_{b d}\Theta_{\epsilon_F \epsilon_{b}}\delta_{c f}\Theta_{\epsilon_F \epsilon_{c}}
+\end{align}
+\end{document}
