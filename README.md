@@ -3,7 +3,7 @@ Fast calculation full Wick's contractions in quantum many-body
 
 Platform: Linux
 
-# Requirements for LaTex output and visualisation
+# Requirements for LaTex output and visualization
 
 External programs: 
 1) gnuplot 
