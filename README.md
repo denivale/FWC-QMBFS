@@ -1,5 +1,5 @@
 # FWC-QMBFS
-Fast calculation of full Wick's contractions in quantum many-body
+Fast calculation of full Wick's contractions in quantum many-body fermion systems
 
 Authors: Deni Vale, Nils Paar
 
