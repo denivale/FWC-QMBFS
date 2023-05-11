@@ -1,6 +1,10 @@
 # FWC-QMBFS
 Fast calculation full Wick's contractions in quantum many-body
 
+Authors: Deni Vale, Nils Paar
+
+Email: denivalesq@gmail.com (dvale@iv.hr), npaar@phy.hr
+
 Platform: Linux
 
 # Requirements for LaTex output and visualization
