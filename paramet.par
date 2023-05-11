@@ -1,0 +1,12 @@
+#automatic
+1
+#hole indices
+i j k l q
+#particle indices
+m n o p
+#draw visual representation (prepair, draw, show) put n for no
+p d n
+#latex document (prepair, write/append, show) put n for no
+p w n
+#program used to open ps or pdf output
+evince
