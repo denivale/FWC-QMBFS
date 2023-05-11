@@ -39,10 +39,13 @@ Make sure you have installed all necessary external programs and additional pack
 Store arrangement of operators in textual file:
 
 Name of the example in.dat. Operators in the case of the two-body interaction:
+
 a_a^\dagger a_b^\dagger a_d a_c
+
 We are looking the expectation value of this arrangement of Q.M. operators.
 
 Content of in.dat should look like:
+
 a*(a)a*(b)a(d)a(c)
 
 Write the following command in terminal:
