@@ -9,6 +9,9 @@ Platform: Linux
 
 This work is published under the Creative Commons Zero v1.0 Universal.
 
+
+The statements above do not include any external program or latex package.
+
 # Requirements for LaTex output and visualization
 
 External programs: 
