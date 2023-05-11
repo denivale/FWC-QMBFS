@@ -7,6 +7,8 @@ Email: denivalesq@gmail.com (dvale@iv.hr), npaar@phy.hr
 
 Platform: Linux
 
+This work is published under the Creative Commons Zero v1.0 Universal.
+
 # Requirements for LaTex output and visualization
 
 External programs: 
