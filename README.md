@@ -102,4 +102,6 @@ We used the first letter of actions to enable choices to prepair, draw and show 
 Write the following command in terminal:
 
 $./ run -f in.dat
+  
+The result is written on the standard output in the latex form for each nonvanishing transformation with the calculation procedure. The LaTex result, if one enables options prepair and write, is then written in the latout.tex file and corresponding pdf file is created. In the folder named VISUAL the whole graphical output is saved.
 
