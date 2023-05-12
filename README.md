@@ -60,6 +60,10 @@ Content of in.dat should look like:
 
 a*(a)a*(b)a(d)a(c)
 
+The above case includes the general operator type. You may also have particle or hole operators, and combination of it. For example in extended Hartree-Fock version you may have:
+
+a*(a)a*(b)a(d)a(c)c*(m)c*(n)h*(j)h*(i)
+
 Write the following command in terminal:
 
 $./ run -f in.dat
