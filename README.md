@@ -67,21 +67,30 @@ a*(a)a*(b)a(d)a(c)c*(m)c*(n)h*(j)h*(i)
 Before runnig the program you should adjust parameters related to predefined indices of particle and hole states, but also to output. Here is the example of the choice saved in paramet.par:
 
 #automatic
+
 1
+
 #hole indices
+
 i j k l q
+
 #particle indices
+
 m n o p
+
 #draw visual representation (prepair, draw, show) put n for no
+
 p d n
+
 #latex document (prepair, write/append, show) put n for no
+
 p w n
+
 #program used to open ps or pdf output
+
 evince
 
 We used the first letter of action to enable choices to prepair, draw and show the graphical representation, and similarly to to prepair, write/append and show for latex document of the output of the calculation. 
-
-
 
 
 Write the following command in terminal:
