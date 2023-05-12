@@ -38,6 +38,8 @@ Additional LaTex packages:
 
 Package simpler-wick may be downloaded from https://github.com/JP-Ellis/simpler-wick/ or visit www.jpellis.me/projects/simpler-wick.
 
+If you are doing this manually please paste refmathstyle.sty, simpler-wick.tex, simpler-wick.sty, simpler-wick.code.tex in the source code folder.
+
 # Compiling code
 
 Open terminal in source folder location and write the following command:
