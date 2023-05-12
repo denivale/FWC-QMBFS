@@ -66,7 +66,9 @@ The above case includes the general operator type. You may also have particle or
 
 a*(a)a*(b)a(d)a(c)c*(m)c*(n)h*(j)h*(i)
 
-In general you may name the input textual file as you wish, but in that case run it as ./run -f <name of input file>.
+In general you may name the input textual file as you wish, but in that case run it as 
+
+$./run -f <name of input file>.
 
 Before runnig the program you should adjust parameters related to predefined indices of particle and hole states, but also to output. Here is the example of the choice saved in paramet.par:
 
