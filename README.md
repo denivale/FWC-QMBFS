@@ -64,6 +64,8 @@ The above case includes the general operator type. You may also have particle or
 
 a*(a)a*(b)a(d)a(c)c*(m)c*(n)h*(j)h*(i)
 
+In general you may name the input textual file as you wish, but in that case run it as ./run -f <name of input file>.
+
 Before runnig the program you should adjust parameters related to predefined indices of particle and hole states, but also to output. Here is the example of the choice saved in paramet.par:
 
 #automatic
@@ -90,9 +92,9 @@ p w n
 
 evince
 
-We used the first letter of actions to enable choices to prepair, draw and show the graphical representation, and similarly to to prepair, write/append and show for latex document of the output of the calculation. In the above example program prepairs the graphical output (vertices, directed lines, intersection points), draws the output (create gnuplot and latex files with ps, dvi, eps output) but does not show it in document viewer. Similarly, the result is prepaired as LaTex objects, which are then written to file. The pdf file of corresponding LaTex is also created in the last step of the process. The pdf version is not shown in document viewer here.
-
-
+We used the first letter of actions to enable choices to prepair, draw and show the graphical representation, and similarly to to prepair, write/append and show for latex document of the output of the calculation. In the above example program prepairs the graphical output (vertices, directed lines, intersection points), draws the output (create gnuplot and latex files with ps, dvi, eps output) but does not show it in document viewer. Similarly, the result is prepaired as LaTex objects, which are then written to file. The pdf file of corresponding LaTex is also created in the last step of the process. The pdf version is not shown in document viewer here. You may also change the document viewer, which should correspod to the installed program on your platform.
+  
+  
 Write the following command in terminal:
 
 $./ run -f in.dat
