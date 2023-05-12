@@ -90,7 +90,7 @@ p w n
 
 evince
 
-We used the first letter of action to enable choices to prepair, draw and show the graphical representation, and similarly to to prepair, write/append and show for latex document of the output of the calculation. 
+We used the first letter of actions to enable choices to prepair, draw and show the graphical representation, and similarly to to prepair, write/append and show for latex document of the output of the calculation. In the above example program prepairs the graphical output (vertices, directed lines, intersection points), draws the output (create gnuplot and latex files with ps, dvi, eps output) but does not show it in document viewer. Similarly, the result is prepaired as LaTex objects, which are then written to file. The pdf file of corresponding LaTex is also created in the last step of the process. The pdf version is not shown in document viewer here.
 
 
 Write the following command in terminal:
