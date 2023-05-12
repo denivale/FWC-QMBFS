@@ -296,6 +296,13 @@ end_latex_document(lat);
 
 finish_latex_file(lat);
 
+if (lat->show == 1){
+    char command[80];
+    sprintf (command, "%s %s &", lat->program_name, "latout.pdf");
+    system(command);
+    
+    }
+
 return;
 
 
