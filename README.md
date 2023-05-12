@@ -44,7 +44,7 @@ Open terminal in source folder location and write the following command:
 
 $ make
 
-# Run code
+# Running program
 
 Make sure you have installed all necessary external programs and additional packages.
 
@@ -63,6 +63,31 @@ a*(a)a*(b)a(d)a(c)
 The above case includes the general operator type. You may also have particle or hole operators, and combination of it. For example in extended Hartree-Fock version you may have:
 
 a*(a)a*(b)a(d)a(c)c*(m)c*(n)h*(j)h*(i)
+
+Before runnig the program you should adjust parameters related to predefined indices of particle and hole states, but also to output. Here is the example of the choice saved in paramet.par:
+
+#automatic
+
+1
+
+#hole indices
+i j k l q
+
+#particle indices
+
+m n o p
+
+#draw visual representation (prepair, draw, show) put n for no
+
+p d n
+
+#latex document (prepair, write/append, show) put n for no
+
+p w n
+
+#program used to open ps or pdf output
+
+evince
 
 Write the following command in terminal:
 
