@@ -1,8 +1,16 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 24 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-//#include "point.h"
+
 #include "operator.h"
 #include "point.h"
 #include "line.h"
@@ -11,7 +19,7 @@
 #define EPS 1.0e-10
 
 static void error_message(char *);
-//static void print_coordinates(point_t);
+
 
 
 static void error_message(char *s){
