@@ -103,12 +103,14 @@ void latex_initialize_arrays_and_counters(int nc, int np, int nd){
 lat_c = 0;
 lat_p = 0;
 lat_d = 0;
+printf ("Prepairing latex arrays...(%d, %d, %d)\n", nc, np, nd);
 latex_data_c = (latex_data3_t*)malloc(sizeof(latex_data3_t)*nc);
 printf ("Array latex_data_c is allocated!\n");
 latex_data_p = (latex_data2_t*)malloc(sizeof(latex_data2_t)*np);
 printf ("Array latex_data_p is allocated!\n");
 latex_delta = (latex_data4_t*)malloc(sizeof(latex_data4_t)*nd);
 printf ("Array latex_delta is allocated!\n");
+printf ("... latex arrays prepaired!\n");
 return;
 }
 
@@ -232,6 +234,11 @@ be_eq(lat,"begin","align");
 if (latex_data_init.n > 6)
 	write_string(lat, "&");
 print_pure_operators(lat, latex_data_init, 1);
+
+if (lat_zero == 1) {
+    write_string(lat, "~=~");
+    goto zero_rez;
+    }
 
 if (latex_data_init.n> 6)
 	write_string(lat, "~=~");
