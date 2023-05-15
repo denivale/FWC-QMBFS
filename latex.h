@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 22 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
 #ifndef _LATEX_H
 #define _LATEX_H
 
@@ -8,7 +16,7 @@
 typedef struct{
 char latex_f[80]; FILE *LF;
 char pdf_f[80]; FILE *PF;
-//mozda jos koji file!!!
+
 short prepair;
 short create;
 short show;
@@ -18,7 +26,7 @@ char program_name[80];
 
 typedef struct{
 short *beg, *end;
-//char *name[30];//?
+
 short p;//info
 short c;//info
 int n; //broj operatora
@@ -62,24 +70,24 @@ void print_pure_operators(latex_info_t *, latex_data3_t, short);
 void latex_prepair_operators(latex_data3_t *, operator_t *, int);
 void test_pure_operators_latex();
 
-//oslobadjanje memorije
+
 void free_latex_data4_t(latex_data4_t *, int);
 void free_latex_data3_t(latex_data3_t *, int);
 void free_latex_data2_t(latex_data2_t *, int);
 
 
-//ispis u tex dokument
+
 void latex_print();
 
-//izrada pdf datoteke
+
 void create_pdf_from_latex_file(latex_info_t *lat);
 
-//pregled pdf datoteke
 
-//latex init/kill
+
+
 void latex_reset_counters();
 void latex_initialize();
-//void latex_print(paramet_t par);
+
 void latex_kill();
 
 
