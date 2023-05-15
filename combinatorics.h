@@ -1,7 +1,14 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 24 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
 #ifndef _COMBINATORICS_H
 #define _COMBINATORICS_H
 
-//Deklaracija i definicija struktura:
 typedef struct{
 short * cf;
 int n;
@@ -12,7 +19,6 @@ short **cf;
 int n;
 } cf2_t;
 
-//Deklaracije funkcija
 extern int factoriel(int);
 extern long int lfactoriel(int);
 
