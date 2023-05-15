@@ -1,3 +1,13 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 22 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -195,7 +205,7 @@ for (calc = 0; calc <= 1; calc++){
 					temp.all[counter] = create_empty_contraction_result(num_lines, res_contraction.I.n);
 
 					printf ("Calculating intersection points: %d\n", temp.all[counter].I.n);
-					printf ("Number of lines : %d\n", temp.all[counter].dlines.n);
+					printf ("Number of directed lines : %d\n", temp.all[counter].dlines.n);
 					printf ("Number of delta Kronecker symbols : %d\n", temp.all[counter].deltas.n);
 					
 					copy_contraction_out(&temp.all[counter], res_contraction);
