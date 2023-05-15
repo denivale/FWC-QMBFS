@@ -1,3 +1,12 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 24 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -149,15 +158,7 @@ return;
 }
 
 
-//============================================================================================================
-// Funkcija operator_t * read_input(char *filename, int *nmax)
-// Opis:
-//	Funkcija koja očitava operatore unutar braket-a prethodno sačuvane u datoteci.
-// Ulazni argumenti:
-//	filename	-	naziv datoteke (tipa char*)
-//	nmax		-	adresa varijable u koju spremamo ukupan broj operatora (pok. tipa int)
-// Funkcija vraća adresu početnog elementa polja operatora (tipa operator_t).
-//============================================================================================================
+
 operator_t * read_input(char *filename, int *nmax){
 register int count = 0;
 char c;
@@ -326,20 +327,7 @@ return;
 
 #ifndef TEST
 #define TEST 1
-//=========================================================================================================
-// void fill_operator(operator_t *op, char type, short cora, char *ind)
-// Opis: 
-// Funkcija popunjava sadržaj operatora sljedećim podacima:
-//	i) tip, čestica (c), šupljina (h) i općeniti tip (a)
-//	ii) stvaranje (+1) /poništenje (-1)
-// 	iii) indeks operatora
-//	iv) red. br. unutar braket-a (opcionalno, ovdje ne!)
-// Ulazni argumenti:
-// 	op	-	adresa operatora čiji sadržaj popunjavamo (operator_t)
-//	type	-	tip operatora (vidi gore) (tipa char)
-//	cora	-	stvaranje/poništenje (tipa short)
-//	ind	-	idenks (tipa char *)
-//=========================================================================================================
+
 void fill_operator(operator_t *op, char type, short cora, char *ind){
 char buffer[80];
 short i = 0;
@@ -371,21 +359,6 @@ return;
 }
 
 
-//=========================================================================================================
-// operator_t return_operator(char type, short cora, char *ind)
-// Opis: 
-// Funkcija popunjava sadržaj operatora sljedećim podacima:
-//      i) tip, čestica (c), šupljina (h) i općeniti tip (a)
-//      ii) stvaranje (+1) /poništenje (-1)
-//      iii) indeks operatora
-//      iv) red. br. unutar braket-a (opcionalno, ovdje ne!)
-// Vidi funkciju void fill_operator(operator_t *op, char type, short cora, char *ind).
-// Ulazni argumenti:
-//      type    -       tip operatora (vidi gore) (tipa char)
-//      cora    -       stvaranje/poništenje (tipa short)
-//      ind     -       idenks (tipa char *)
-// Funkcija vraća operator
-//=========================================================================================================
 operator_t create_operator(char type, short cora, char *ind){
 operator_t temp;
 char buffer[80];
