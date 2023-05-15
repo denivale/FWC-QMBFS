@@ -1,3 +1,12 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Feb 01 2019
+ - last modification May 15 2023 (D. Vale)
+*/
+//========================================================================
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,11 +17,7 @@
 #include "shalloc.h"
 
 
-//==============================================================================================================
-// static int compare(operator_t * op, char * s, int n, short * pos)
-// Opis:
-// Usporedba indeksa operatora. Jednostavno prolazimo kroz indekse svih operatora
-//==============================================================================================================
+
 static int compare(operator_t * op, char * s, int n, short * pos){
 register int i, comp;
 int sim = 0; 
@@ -28,14 +33,10 @@ for (i = 0; i < n; i++){
 return sim;
 }
 
-//==============================================================================================================
-// Funkcija warning_index(char *s, short *pos, int n)
-// Opis:
-// Ispisuje pojavljuje li se isti indeks kod preostalih operatora
-//==============================================================================================================
+
 static void warning_index(char *s, short *pos, int n){
 register int i;
-printf ("Indeks \"%s\" se jos pojavljuje na sljedecim pozicijama:\n", s);
+printf ("Index \"%s\" is repeating on the positions:\n", s);
 printf("%4.1d", n);
 for (i = 0; i < n; i++){
 	if (pos[i] == 1) printf ("%4.1d", i);
@@ -44,17 +45,7 @@ printf ("\n");
 return;
 }
 
-//==============================================================================================================
-// Funkcija int warning_repeating_indices(operator_t * op, int n_op)
-// Opis:
-// Provjerava postoji li isti indeks u polju operatorima
-// Ulazni argumenti:
-//	op	- 	polje operatora
-//	n_op	- 	broj operatora
-// Rezultat:
-//	0	-	nema ponavljanja indeksa
-//	>0	.	ponavljanje indeksa
-//==============================================================================================================
+
 int warning_repeating_indices(operator_t * op, int n_op){
 int war = 0;
 register int i;
@@ -70,22 +61,7 @@ free(pos);
 return war;
 }
 
-//=============================================================================================================
-// Funkcija static int test_hp(paramet_t par, operator_t op, operator_t *op_new)
-//
-// Opis:
-// Funkcija koja provjerava postoje li predefinirani indeksi za česticna i šupljinska stanja.
-// Ukoliko određeni operator sadrži indeks koji je predefiniran, tada funkcija radi transformacije 
-// općenitih operatora u one čestičnog ili šupljinskog karaktera.
-//
-// Ulazni argumenti:
-// 	par	-	predefinirani indeksi za supljinska i cesticna stanja nalaze se u strukturi paramet_t
-//	op	-	operator koje testiramo
-//	op_new	-	novi operator
-// Rezultat:
-//	0	-	nema transformacije operatora
-//	1	-	transformacija operatora
-//=============================================================================================================
+
 static int test_hp(paramet_t par, operator_t op, operator_t *op_new){
 register int i;
 int stat = 0;
@@ -110,18 +86,7 @@ for (i = 0; i < par.pin; i++){
 return stat;
 }
 
-//=============================================================================================================
-// Opis:
-// Funkcija koja stvara transformirani skup operatora baziran na predefiniranim indeksima vezanih uz 
-// čestična i šupljinska stanja. 
-// Ulazni argumenti:
-// 	op	-	operatori
-//	par	-	konkretno treba dio strukture vezan za predefinirane šupljinske i čestične indekse
-//	n_op	-	broj operatora
-// Izlaz:
-//	transformed	- 	broj transformiranih operatora
-//	vraća polje transformiranih operatora tipa operator_t
-//=============================================================================================================
+
 operator_t * transformation_of_indices(operator_t * op, paramet_t par, int n_op, int *transformed){
 operator_t * temp;
 temp = create_operators(n_op);
