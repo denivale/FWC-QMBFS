@@ -290,7 +290,11 @@ if (info.draw == 0)
 
 create_latex_ps_file(gp);
 if (info.show == 1){
-        show_ps_file(gp.eps_f);
+        //show_ps_file(gp.eps_f);
+        char command[80];
+        sprintf (command, "%s VISUAL/%s", info.program_name, gp.eps_f);
+        printf ("%s\n", command);
+        system(command);
         }
 
 
