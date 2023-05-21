@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 25 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -41,7 +49,7 @@ if (fp != NULL){
                 fprintf(stdout, ">%s", line);
                 do {
                         fscanf (fp, "%c", &c);
-		//      printf ("znak: %c\n", c);
+
                         if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
                                 if (test_repeating_indices(par->hi, c, par->hin) == 0)
                                         par->hi[par->hin++] = c;

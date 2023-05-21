@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 25 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
+
 #ifndef _READING_H
 #define _READING_H
 
@@ -5,7 +13,7 @@
 
 typedef struct{
 short aut;
-char *hi;//u pravilu to ukljucuje i i1, i2, i3 i sl. kao indekse
+char *hi;
 short hin;
 char *pi;
 short pin;

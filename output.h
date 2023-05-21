@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 25 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
+
 #ifndef _OUTPUT_H
 #define _OUTPUT_H
 
@@ -11,15 +19,15 @@ all_point_t I;
 all_kronecker_t deltas;
 all_directed_lines_t dlines;
 int fac;
-int ord;//permutacije
+int ord;
 } contraction_out_t;
 
 typedef struct{
 contraction_out_t *all;
 all_point_t T;
-int nc;// broj kontrakcija//ukupan broj permutacija
-int live;//0,1
-int ord;//kombinacije
+int nc;
+int live;
+int ord;
 } all_contractions_out_t;
 
 typedef struct{
@@ -36,7 +44,7 @@ void set_contraction_out(contraction_out_t *dest, contraction_out_t source);
 void copy_contraction_out(contraction_out_t *temp, contraction_out_t source);
 
 
-//oslobađanje memorije
+
 void free_contraction_out(contraction_out_t *temp);
 void free_all_contractions_out(all_contractions_out_t *temp);
 void free_all_comb_of_contractions_out(all_comb_of_contractions_out_t *temp);

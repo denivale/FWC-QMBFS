@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 26 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,17 +22,13 @@ fprintf (stderr, "Error!!!!\n%s\n", s);
 exit(2);
 }
 
-//Fale dlinije!!!!
+
 contraction_out_t create_empty_contraction_result(int num_lines, int num_point){
 contraction_out_t temp;
 
 temp.deltas = create_empty_all_kronecker(num_lines);
 
-//printf ("broj tocaka u create_contraction = %d\n", num_point);
-
 temp.I = create_array_of_empty_points(num_point);
-
-//printf ("broj tocaka u create_contraction, podatak I.n = %d\n",temp.I.n); 
 
 temp.dlines = create_all_empty_directed_lines(num_lines);
 
