@@ -23,7 +23,7 @@ short c;//creation or anihilation
 char ind[INDEX_SIZE];
 short pos;
 char tind[4];
-}
+} operator_t;
 
 typedef struct{
 operator_t *op;
