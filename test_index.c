@@ -1,3 +1,10 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Feb 01 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,6 +41,7 @@ operator_t *op_new;
 op_new = create_operators(n_op);
 op_new = transformation_of_indices(op, par, n_op, &t);
 
+printf ("NEW:\n");
 print_operator_series(op_new, n_op);
 
 printf ("Changes made on %d operators\n", t);
