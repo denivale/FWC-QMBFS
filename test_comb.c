@@ -1,3 +1,11 @@
+//========================================================================
+/*
+D. Vale, N. Paar 
+ - created Jan 31 2019
+ - last modification May 21 2023 (D. Vale)
+*/
+//========================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -94,9 +102,10 @@ return;
 
 
 int main(){
-
+printf ("Testing permutations...\n");
 test_combinations();
 test_permutations();
+printf ("... end of testing\n");
 
 return 0;
 }
